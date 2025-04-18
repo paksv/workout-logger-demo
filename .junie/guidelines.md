@@ -2,6 +2,17 @@
 
 This document provides guidelines and best practices for developing the Workout Logger Demo application.
 
+Use `docs/plan.md` to plan as the implementation guide for this project.
+
+## Technology Stack
+
+- **Backend**: Kotlin with Spring Boot
+- **Database**: PostgreSQL (or H2 for development)
+- **API**: RESTful API with Spring Web
+- **Frontend**: React or Kotlin Multiplatform with Compose for Web/Desktop/Mobile
+- **Authentication**: Spring Security with JWT
+- **Build Tool**: Gradle with Kotlin DSL
+
 ## Kotlin Style Guide
 
 ### Naming Conventions
