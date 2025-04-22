@@ -4,14 +4,13 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
 import java.time.LocalDateTime
 
-@Table("athletes")
-data class Athlete(
+@Table("users")
+data class User(
     @Id
     val id: Long? = null,
-    val userId: Long,
-    val height: Double? = null,
-    val weight: Double? = null,
-    val fitnessGoals: String? = null,
+    val username: String,
+    val email: String,
+    val passwordHash: String,
     val createdAt: LocalDateTime = LocalDateTime.now(),
     val updatedAt: LocalDateTime = LocalDateTime.now()
 )
