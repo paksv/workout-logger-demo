@@ -2,8 +2,11 @@ services:
   devcontainer_app:
     image: 'mcr.microsoft.com/devcontainers/java:1-17'
     volumes:
-      - ../:/workspace/:cached
+# mount project's parent folder as /workspace,
+# so the project itself will be available at /workspace/<project-name>
+      - ../../:/workspace/:cached
     command: 'sleep infinity'
+# network with service_db
     network_mode: 'service:postgres_db'
 
   postgres_db:
