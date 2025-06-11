@@ -2,6 +2,7 @@
   "name": "Java",
   "dockerComposeFile": "../compose.yaml",
   "service": "devcontainer_app",
+  "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "none",
