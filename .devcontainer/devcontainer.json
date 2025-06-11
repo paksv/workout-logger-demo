@@ -1,6 +1,7 @@
 {
   "name": "Java",
-  "image": "mcr.microsoft.com/devcontainers/java:1-21",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "devcontainer_app",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "none",
