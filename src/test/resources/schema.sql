@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS workouts (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(1000),
+    duration INT NOT NULL,
+    calories_burned INT,
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
