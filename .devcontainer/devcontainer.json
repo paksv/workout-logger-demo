@@ -1,6 +1,9 @@
 {
   "name": "Java",
-  "dockerComposeFile": "../compose.yaml",
+  // relative path to docker-compose.yaml which will be used to launch the devcontainer
+  "dockerComposeFile": "docker-compose.yaml",
+  // particular service from "dockerComposeFile" which will be used as a primary container.
+  // sources will be mounted into that container at "workspaceFolder"
   "service": "devcontainer_app",
   "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
   "features": {
