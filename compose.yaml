@@ -2,7 +2,7 @@ services:
   devcontainer_app:
     image: 'mcr.microsoft.com/devcontainers/java:1-21'
     volumes:
-      - ../:/workspaces/:cached
+      - ../:/workspace/:cached
     command: 'sleep infinity'
     network_mode: 'service:postgres_db'
 
